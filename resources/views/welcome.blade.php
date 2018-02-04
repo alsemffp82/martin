@@ -76,11 +76,9 @@
                     @endauth
                 </div>
             @endif
-            <div class="content">
-                <section>
-                    <h1>Whanau</h1>
-                </section>                
-            </div>
+            <h1>Whanau</h1>
+    
         </div>
+        
     </body>
 </html>
