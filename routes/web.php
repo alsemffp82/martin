@@ -14,11 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('anotherLink', function () {
-    return view('diary');
-});
+
 Auth::routes();
-Route::get('home', 'HomeController@index')->name('home');
 
 Route::resource('posts', 'PostController');
 
