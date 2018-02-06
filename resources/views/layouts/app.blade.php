@@ -70,8 +70,10 @@
                 </div>
             </div>
         </nav>
-        @include('partials._messages')
-        @yield('content')
+        <div class="container-fluid">
+            @include('partials._messages')
+            @yield('content')
+        </div>
     </div>
 
     <!-- Scripts -->
