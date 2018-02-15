@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('posts', 'PostController');
+
+Route::get('/martin', function () {
+    return view('portfolio/index');
+});

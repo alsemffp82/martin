@@ -100,7 +100,7 @@ class PostController extends Controller
 
         $post->title = $request->input('title');
         $post->body = $request->input('body');
-
+        
         $post->save();
 
         //set flash
