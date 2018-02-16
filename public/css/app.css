@@ -8400,12 +8400,383 @@ input[type="submit"] {
   margin: 20px auto;
 }
 
+.mt0 {
+  margin-top: 0px;
+}
+
+.mr0 {
+  margin-right: 0px;
+}
+
+.mb0 {
+  margin-bottom: 0px;
+}
+
+.ml0 {
+  margin-left: 0px;
+}
+
+.mtt {
+  margin-top: 2px;
+}
+
+.mrt {
+  margin-right: 2px;
+}
+
+.mbt {
+  margin-bottom: 2px;
+}
+
+.mlt {
+  margin-left: 2px;
+}
+
+.mts {
+  margin-top: 4px;
+}
+
+.mrs {
+  margin-right: 4px;
+}
+
+.mbs {
+  margin-bottom: 4px;
+}
+
+.mls {
+  margin-left: 4px;
+}
+
+.mtm {
+  margin-top: 8px;
+}
+
+.mrm {
+  margin-right: 8px;
+}
+
+.mbm {
+  margin-bottom: 8px;
+}
+
+.mlm {
+  margin-left: 8px;
+}
+
+.mtb {
+  margin-top: 16px;
+}
+
+.mrb {
+  margin-right: 16px;
+}
+
 .mbb {
   margin-bottom: 16px;
 }
 
-.mbt {
-  margin-top: 16px;
+.mlb {
+  margin-left: 16px;
+}
+
+.ml30 {
+  margin-left: 30px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mr30 {
+  margin-right: 30px;
+}
+
+.mb30 {
+  margin-bottom: 30px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+.mr50 {
+  margin-right: 50px;
+}
+
+.mar16 {
+  margin: 16px;
+}
+
+.pt0 {
+  padding-top: 0px;
+}
+
+.pr0 {
+  padding-right: 0px;
+}
+
+.pb0 {
+  padding-bottom: 0px;
+}
+
+.pl0 {
+  padding-left: 0px;
+}
+
+.ptt {
+  padding-top: 2px;
+}
+
+.pbt {
+  padding-bottom: 2px;
+}
+
+.pts {
+  padding-top: 4px;
+}
+
+.prs {
+  padding-right: 4px;
+}
+
+.pbs {
+  padding-bottom: 4px;
+}
+
+.pls {
+  padding-left: 4px;
+}
+
+.ptm {
+  padding-top: 8px;
+}
+
+.prm {
+  padding-right: 8px;
+}
+
+.pbm {
+  padding-bottom: 8px;
+}
+
+.plm {
+  padding-left: 8px;
+}
+
+.ptb {
+  padding-top: 16px;
+}
+
+.prb {
+  padding-right: 16px;
+}
+
+.pbb {
+  padding-bottom: 16px;
+}
+
+.plb {
+  padding-left: 16px;
+}
+
+.ptg {
+  padding-top: 30px;
+}
+
+.pbg {
+  padding-bottom: 30px;
+}
+
+.pad0 {
+  padding: 0;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.j-cen {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.j-eve {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.j-bet {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.j-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.a-cen {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.a-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.a-sta {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.f-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.f-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.titalic {
+  font-style: italic;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.tsmaller {
+  font-size: 0.8em;
+}
+
+.tlarger {
+  font-size: 1.6em;
+}
+
+.tleft {
+  text-align: left;
+}
+
+.tright {
+  text-align: right;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+.hov-ul-none {
+  text-decoration: none;
+}
+
+.wb-bw {
+  word-break: break-word;
+}
+
+.wspace-none {
+  white-space: normal;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.vw100 {
+  width: 100vw;
+}
+
+.vh100 {
+  height: 100vh;
+}
+
+.pabsolute {
+  position: absolute;
+}
+
+.prelative {
+  position: relative;
+}
+
+.z-in0 {
+  z-index: 0;
+}
+
+.z-in1 {
+  z-index: 1;
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ohidden {
+  overflow: hidden;
+}
+
+.test-bor {
+  border: 1px red solid;
+}
+
+.tran-cen {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50px, -50px);
+          transform: translate(-50px, -50px);
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-mbb {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .desk-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 input.parsley-success,

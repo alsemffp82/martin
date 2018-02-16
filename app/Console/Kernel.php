@@ -39,4 +39,9 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+
+    //inside your Kernel.php, make sure to register the middleware
+    // protected $routeMiddleware = [
+    //     'subdomain' => \App\Http\Middleware\Subdomain::class,
+    // ];
 }
