@@ -18,69 +18,46 @@
     <![endif]-->
 </head>
 <body>
-    <div id="app">
-        <nav style="height:100px;" id="navigation" class="w100 test-bor d-flex a-cen j-bet">
+    <div id="app" class="w100 h100" style="overflow-x:hidden">
+        <nav style="height:100px;" id="navigation" class="pfixed w100 d-flex a-cen j-bet z-in1">
             <div class="col-md-8"><h2 class="mt0">Macho</h2></div>
             <ul class="col-md-4 d-flex j-end a-cen">
-                <li class="mlm mrm d-ib"><a href="">Who I am</a></li>
-                <li class="mlm mrm d-ib"><a href="">Works</a></li>
-                <li class="mlm mrm d-ib"><a href="">Contact</a></li>
+                <li class="mlm mrm d-ib"><p @click="goPage(1)">Who I am</p></li>
+                <li class="mlm mrm d-ib"><p @click="goPage(2)">Works</p></li>
+                <li class="mlm mrm d-ib"><p @click="goPage(3)">Contact</p></li>
             </ul>
         </nav>    
-        <section class="vw100 test-bor" style="height:calc(100vh - 100px);">
-            <div id="rejection"></div>
-        </section>
-        <section class="vw100 vh100 test-bor">
-            About me
-        </section>
-        <section class="vw100 vh100 test-bor">
-            my works
-        </section>
+        <div class="main">
 
-        <footer>
-            contact ( email & linked in )
-        </footer>
+            <section class="pt100">
+                <div id="rejection"></div>
+            </section>
+            <section id="about" class="pt100 row">
+                <div class="section-right col-md-5 col-md-offset-7">
+                    <img src="{{ asset('image/myavatar.png') }}" alt="Awesome Matin" class="w100" id="martinPhoto">
+                </div>
+            </section>
+            <section id="work" class="pt100">
+                my works
+            </section>
+
+        </div>
         
     </div>
     
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/lottie.js') }}"></script>
     <script>
-            
         $(function(){
             $(window).scroll(function(){
                 let windowTop = $(window).scrollTop();
-                let nav = $('#navigation');
-                if( windowTop >= 100 ) {
-                    nav.css('position','fixed');
-                } else {
-                    nav.css('position','relative');
-                } 
+                let photo = $('#martinPhoto');
+
             });
             
+            $('.main').onepage_scroll();
         });
-
-        
-        
-        
-            var anim;
-            var elem = document.getElementById('mail');
             
-            var animData = {
-                container: elem,
-                renderer: 'svg',
-                loop: true,
-                autoplay: true,
-                rendererSettings: {
-                    progressiveLoad:true,
-                    preserveAspectRatio:'xMidYMid meet'
-                },
-                path: '/image/mail.json'
-            };
-            anim = lottie.loadAnimation(animData);
-            
-            anim.setSubframe(false);
-        
     </script>
     
 </body>
