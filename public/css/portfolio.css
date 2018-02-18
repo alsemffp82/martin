@@ -35,8 +35,8 @@ body, .onepage-wrapper, html {
 	padding: 0;
 }
 .onepage-pagination li {
-  padding: 0;
-  text-align: center;
+	padding: 0;
+	text-align: center;
 }
 .onepage-pagination li a{
 	padding: 10px;

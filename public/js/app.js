@@ -11364,7 +11364,13 @@ window.Vue = __webpack_require__(38);
 Vue.component('example-component', __webpack_require__(41));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app',
+    methods: {
+        goPage: function goPage(num) {
+            var num = num + 1;
+            $('.onepage-pagination li:nth-child(' + num + ')').children().trigger("click");
+        }
+    }
 });
 
 /***/ }),

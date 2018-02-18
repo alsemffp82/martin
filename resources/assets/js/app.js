@@ -21,7 +21,14 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    methods: {
+        goPage: function(num) {
+            var num = num + 1;
+            $('.onepage-pagination li:nth-child('+ num +')').children().trigger("click");
+
+        }
+    }
 });
 
 

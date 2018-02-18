@@ -9,6 +9,7 @@
     <title>Martin Portfolio</title>
     
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asar:400,700,800">  <!-- Google web font "Asar" -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/portfolio.css') }}" rel="stylesheet">
 
@@ -20,7 +21,7 @@
 <body>
     <div id="app" class="w100 h100" style="overflow-x:hidden">
         <nav style="height:100px;" id="navigation" class="pfixed w100 d-flex a-cen j-bet z-in1">
-            <div class="col-md-8"><h2 class="mt0">Macho</h2></div>
+            <div class="col-md-8"><h2 class="mt0" @click="goPage(0)">Macho</h2></div>
             <ul class="col-md-4 d-flex j-end a-cen">
                 <li class="mlm mrm d-ib"><p @click="goPage(1)">Who I am</p></li>
                 <li class="mlm mrm d-ib"><p @click="goPage(2)">Works</p></li>
@@ -32,15 +33,17 @@
             <section class="pt100">
                 <div id="rejection"></div>
             </section>
-            <section id="about" class="pt100 row">
-                <div class="section-right col-md-5 col-md-offset-7">
+            <section class="pt100 row">
+                <div class="section-right col-xs-5 col-xs-offset-7">
                     <img src="{{ asset('image/myavatar.png') }}" alt="Awesome Matin" class="w100" id="martinPhoto">
                 </div>
             </section>
-            <section id="work" class="pt100">
+            <section class="pt100">
                 my works
             </section>
-
+            <section class="pt100">
+                Contact
+            </section>
         </div>
         
     </div>
@@ -48,17 +51,16 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/lottie.js') }}"></script>
     <script>
-        $(function(){
-            $(window).scroll(function(){
-                let windowTop = $(window).scrollTop();
-                let photo = $('#martinPhoto');
 
-            });
+        $(function(){
+            let photo = $('#martinPhoto');
+            
             
             $('.main').onepage_scroll();
         });
             
     </script>
+    
     
 </body>
 </html>
