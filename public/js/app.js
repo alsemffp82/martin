@@ -44018,8 +44018,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-<<<<<<< HEAD
-__webpack_require__(38);
+__webpack_require__(41);
 // On some exotic environments, it's not clear which object `setimmeidate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -44029,11 +44028,6 @@ exports.setImmediate = (typeof self !== "undefined" && self.setImmediate) ||
 exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
                          (typeof global !== "undefined" && global.clearImmediate) ||
                          (this && this.clearImmediate);
-=======
-__webpack_require__(41);
-exports.setImmediate = setImmediate;
-exports.clearImmediate = clearImmediate;
->>>>>>> 51302a25bbf2472929fcb54c2b49e9eb18d182bd
 
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
