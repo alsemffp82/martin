@@ -1,6 +1,6 @@
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//fonts
+
 
 // Variables
 @import "variables";
@@ -12,4 +12,8 @@
 //home
 @import "home";
 
+@import "global";
+
 @import "parsley";
+
+@import "animate";

@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 require('./parsley');
+require('./main');
+var $ = require('jquery');
 
 window.Vue = require('vue');
 
@@ -17,7 +19,41 @@ window.Vue = require('vue');
  */
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('first-work', require('./components/FirstWork.vue'));
+
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        workView: true,
+        work: 0,
+        
+    },
+    components:{
+        
+    },
+    methods: {
+        goPage: function(num) {
+            var nav = num + 1;
+            $('.onepage-pagination li:nth-child('+ nav +')').children().trigger("click");
+        },
+        eachWork: function(num) {
+            this.work = num
+            !this.workView
+        }
+    } 
 });
+
+$(function(){
+    
+    $('.main').onepage_scroll();
+    // var sectionIndex = $('section.active').data('index');
+    // console.log(sectionIndex);
+    // if( sectionIndex == 2) {
+    //     setTimeout(() => {
+    //         $('.section-right').addClass('animated fadeIn')$('.section-right').addClass('animated fadeIn')       
+    //     }, 1000);
+    // }
+});
+
+

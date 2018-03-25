@@ -18,3 +18,19 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('posts', 'PostController');
+
+// Route::group(['middleware' => 'subdomain', 'domain' => 'subdomain.{domain}.{tld}'], function () {
+    
+//     Route::get('/', function () {
+//         dd(func_get_args()); //no args, because it was removed in the middleware
+//     });
+    
+// });
+
+Route::get('/martin', function () {
+    return view('portfolio/app');
+});
+
+// Route::get('/work/1', function () {
+//     return view('portfolio/work/index');
+// });
