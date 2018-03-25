@@ -28,5 +28,9 @@ Route::resource('posts', 'PostController');
 // });
 
 Route::get('/martin', function () {
-    return view('portfolio/index');
+    return view('portfolio/app');
 });
+
+// Route::get('/work/1', function () {
+//     return view('portfolio/work/index');
+// });

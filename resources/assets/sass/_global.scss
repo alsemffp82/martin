@@ -28,7 +28,8 @@
 .mb50 { margin-bottom: 50px; }
 .mr50 { margin-right: 50px; }
 
-.mar16 {margin: 16px;}
+.mar0 { margin: 0 }
+.mar16 { margin: 16px;}
 
 //Padding
 
@@ -100,6 +101,7 @@
 .z-in0 { z-index: 0; }
 .z-in1 { z-index: 1; }
 
+.cpointer { cursor: pointer; }
 .truncate {
     white-space: nowrap;
     overflow: hidden;
