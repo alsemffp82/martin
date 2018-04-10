@@ -77,8 +77,6 @@
                 </div>
             @endif
             <h1>Whanau</h1>
-    
         </div>
-        
     </body>
 </html>
