@@ -21,16 +21,18 @@ window.Vue = require('vue');
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 Vue.component('first-work', require('./components/FirstWork.vue'));
 
+import Lottie from './components/lottie.vue';
+import * as animationData from '../bms-rocket.json';
 
-const app = new Vue({
+new Vue({
     el: '#app',
     data: {
         workView: true,
         work: 0,
-        
+        defaultOptions: {animationData: animationData},
     },
     components:{
-        
+        'lottie':Lottie,
     },
     methods: {
         goPage: function(num) {

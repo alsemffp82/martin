@@ -31,7 +31,7 @@
         </nav>    
         <div class="main">
             <section>
-                <example-component></example-component>
+                <lottie :options="defaultOptions" :height="400" :width="400"></lottie>
             </section>
             <section>
                 <div class="row">
