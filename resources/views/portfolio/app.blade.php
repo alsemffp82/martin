@@ -23,7 +23,7 @@
     <div id="app" class="w100 h100" style="overflow-x:hidden; max-width:1200px;margin:0 auto;">
 
         <nav style="height:100px;" id="navigation" class="w100 d-flex a-cen j-bet z-in1 prelative">
-            <div class="col-md-8"><h2 class="mt0 cpointer" @click="goPage(0)">Macho</h2></div>
+            <div class="col-md-8"><h2 class="mt0 cpointer" @click="goPage(0)">Hello There</h2></div>
             <ul class="col-md-4 d-flex j-end a-cen">
                 <li class="mlm mrm d-ib cpointer"><p @click="goPage(1)">Who I am</p></li>
                 <li class="mlm mrm d-ib cpointer"><p @click="goPage(2)">Works</p></li>
